@@ -10,13 +10,19 @@ public class Shirt {
     public int A;
     public int B;
 
+    public Shirt(){}
     public Shirt(int _itemNo, String _name) {
+        this();
         itemCount++;
         this.itemNo = _itemNo;
         this.name = _name;
         display();
         this.description = returnStringValue();
         // System.out.println(description);
+    }
+    public Shirt(char _colorCode) {
+        this();
+        this.colorCode = _colorCode;
     }
 
     public void display() {
