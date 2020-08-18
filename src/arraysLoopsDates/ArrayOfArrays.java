@@ -1,5 +1,7 @@
 package arraysLoopsDates;
 
+import com.sun.security.jgss.GSSUtil;
+
 import java.util.Random;
 
 public class ArrayOfArrays {
@@ -26,11 +28,28 @@ public class ArrayOfArrays {
             System.out.println("név: " + name);
         }
 
+        int height = 5, width = 10;
+        for(int i=0; i < height; i++) {
+            for(int j=0; j < width; j++) {
+                System.out.print('@');
+            }
+            System.out.println();
+        }
+
         // 2 dimensional array: 5 arrays of 4 elements each (1.elem: sorok száma, 2. elem: oszlopok száma
         yearlySales = new int[5][4];
-       /* for(int i=0; i< yearlySales.length; i++) {
-            for ()
-        }*/
+       for(int i=0; i< yearlySales.length; i++) {
+            for (int j = 0; j < yearlySales[i].length; j++) {
+                yearlySales[i][j] = (int)(Math.random() * 100);
+                if (j == yearlySales[i].length - 1) {
+                    System.out.print(yearlySales[i][j]);
+                } else {
+                    System.out.print(yearlySales[i][j] + "|");
+                }
+            }
+           System.out.println();
+        }
+
 
     }
 }
