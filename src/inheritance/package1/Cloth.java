@@ -15,7 +15,7 @@ public class Cloth {
 
     }
     public void display() {
-        System.out.println("superclass method: itemName: " + name + ", itemColor: " + colorCode);
+        System.out.println("superclass method: itemName: " + name + ", itemColor: " + colorCode+ ", itemSize: " + size);
     }
 
     protected void setColorCode(char newColorCode) {

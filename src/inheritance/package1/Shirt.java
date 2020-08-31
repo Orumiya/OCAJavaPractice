@@ -31,8 +31,10 @@ public class Shirt extends Cloth {
     }
     @Override
     public void display() {
-        System.out.println("info from child class");
         super.display();
-        System.out.println("info from child class2");
+        System.out.println("info from child class:");
+        System.out.println("neckSize: " + getNeckSize());
+        System.out.println("shirt name: " + getName());
+        System.out.println("shirt color: " + getColorCode());
     }
 }
