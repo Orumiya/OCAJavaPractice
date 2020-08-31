@@ -1,5 +1,7 @@
 package arraysLoopsDates;
 
+import java.util.Scanner;
+
 public class BreakContinue {
     public static void main(String[] args) {
         String[] names = new String[5];
@@ -20,5 +22,26 @@ public class BreakContinue {
                 break;
             System.out.println(names[i]);
         }
+
+        System.out.println("Give me a color code!");
+        Scanner in = new Scanner(System.in);
+        String colorCode = in.nextLine();
+
+        System.out.println(translateColors(colorCode));
     }
+
+    public static String translateColors(String colorCode) {
+        switch(colorCode) {
+            case "R":
+                return "red";
+            case "B":
+                return "blue";
+            case "Y":
+                return "yellow";
+            default:
+                return "no such color";
+        }
+    }
+
+
 }
