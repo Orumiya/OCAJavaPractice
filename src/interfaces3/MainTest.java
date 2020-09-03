@@ -21,5 +21,10 @@ public class MainTest {
         if (r instanceof Clothing) {
             ((Clothing) r).display();
         }
+
+        // changing the reference type of an object
+        // way2:
+        Clothing c2 = s;
+        c2.display();
     }
 }
