@@ -17,6 +17,9 @@ public class MainExceptionHandlingTest {
         Shirt[] shirts = new Shirt[2];
         // shirts[0].display();
 
+        //java.lang.ArithmeticException
+       // double num = 3 / 0;
+
         /**
          * Exceptions are subclass of THROWABLE
          * THROWABLE main subclasses:
