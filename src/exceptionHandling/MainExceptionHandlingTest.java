@@ -1,5 +1,8 @@
 package exceptionHandling;
 
+import java.io.File;
+import java.io.IOException;
+
 public class MainExceptionHandlingTest {
     public static void main(String[] args) {
 
@@ -43,12 +46,26 @@ public class MainExceptionHandlingTest {
             System.out.println("Exception handled: " + e.getMessage());
         }
 
+        // CHECKED EXCEPTION
+        try{
+
+            testCheckedException();
+        } catch (IOException e) {
+            System.out.println("exception caught: " + e);
+        }
+
 
     }
 
     public static void doRiskyCode() throws myException {
         System.out.println("risky part");
         throw new myException("exception from risky code");
+    }
+
+    public static void testCheckedException() throws IOException {
+        File testfile = new File("//testFile.txt");
+        testfile.createNewFile();
+        System.out.println("testfile exists: " + testfile.exists());
     }
 }
 
