@@ -29,7 +29,8 @@ public class TeamCompareMain {
             newTeam.add(new Team(teamName, goals));
         }
 
-        Collections.sort(newTeam);
+        // lambdával, ez bonyolultabb esetben is működik
+        Collections.sort(newTeam, (Team t1, Team t2) -> Integer.valueOf(t1.compareTo(t2)));
         newTeam.forEach(team -> {
             System.out.println(team.name + ": " + team.points);
         });
