@@ -87,6 +87,8 @@ public class PrimitiveTestMain {
         smaller types are automatically promoted to bigger types
          */
 
+        TypeCastingExamples test = new TypeCastingExamples();
+        MathOperations mathop = new MathOperations();
 
 
     }
