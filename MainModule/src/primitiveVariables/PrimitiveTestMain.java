@@ -89,6 +89,8 @@ public class PrimitiveTestMain {
 
         TypeCastingExamples test = new TypeCastingExamples();
         MathOperations mathop = new MathOperations();
+        BitwiseOp bitwiseop = new BitwiseOp();
+
 
 
     }
