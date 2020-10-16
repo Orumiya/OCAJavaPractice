@@ -6,5 +6,6 @@ public class TestClass {
        StringStuff strings = new StringStuff();
        StringBuilderTest sb = new StringBuilderTest();
        WrapperClassesTest wp = new WrapperClassesTest();
+        BigDecimalTest bd = new BigDecimalTest();
     }
 }
