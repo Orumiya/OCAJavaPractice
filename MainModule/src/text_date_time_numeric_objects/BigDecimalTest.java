@@ -5,6 +5,7 @@ import java.math.RoundingMode;
 
 public class BigDecimalTest {
     public BigDecimalTest() {
+        System.out.println("Big Decimal (immutable object)");
         BigDecimal price = BigDecimal.valueOf(12.23);
         BigDecimal taxRate = BigDecimal.valueOf(0.27);
         BigDecimal tax = price.multiply(taxRate);
