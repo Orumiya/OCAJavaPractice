@@ -42,11 +42,5 @@ public class InstantDurationPeriod {
         Period shortPeriod = Period.ofMonths(LocalDate.now().getMonth().getValue());
         System.out.println("periodBetween: " + periodBetween);
         System.out.println("shortPeriod: " + shortPeriod);
-
-
-
-
-
-
     }
 }
