@@ -5,9 +5,17 @@ import java.time.LocalDate;
 public class Food extends Product {
 
     private LocalDate expirationDate;
+    public Food(String name, double basePrice) {
+        super(name, basePrice);
+    }
 
-    public Food(String name, LocalDate expirationDate) {
-        super(name);
+    @Override
+    public double getPrice() {
+        return 500;
+    }
+
+    public Food(String name, double basePrice, LocalDate expirationDate) {
+        this(name, basePrice);
         this.setExpirationDate(expirationDate);
     }
 

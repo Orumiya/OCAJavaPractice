@@ -1,17 +1,23 @@
 package inheritance_test;
 
 import java.util.Objects;
-
+enum PRODUCT_TYPE {
+    FOOD,
+    DRINK
+}
 public abstract class Product {
     public static int ID = 0;
 
+    private PRODUCT_TYPE productType;
     private String name;
+    private double basePrice;
     public final int productId;
 
-    public Product(String name) {
+    public Product(String name, double basePrice) {
         this.name = name;
         ID++;
         this.productId = ID;
+        this.setBasePrice(basePrice);
     }
     public String getName() {
         return name;
@@ -39,5 +45,15 @@ public abstract class Product {
     public int hashCode() {
         // return this.productId;
         return Objects.hash(productId, name);
+    }
+
+    public abstract double getPrice();
+
+    public double getBasePrice() {
+        return basePrice;
+    }
+
+    public void setBasePrice(double basePrice) {
+        this.basePrice = basePrice;
     }
 }

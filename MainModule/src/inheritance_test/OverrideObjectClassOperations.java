@@ -5,9 +5,9 @@ import java.time.LocalDate;
 public class OverrideObjectClassOperations {
     public OverrideObjectClassOperations() {
 
-        Product p = new Food("pasta", LocalDate.of(2020,12,31));
+        Product p = new Food("pasta", 1100, LocalDate.of(2020,12,31));
         System.out.println("product toString: " +p.toString());
-        Food f = new Food("lasagne", LocalDate.of(2021, 2, 13));
+        Food f = new Food("lasagne", 1800, LocalDate.of(2021, 2, 13));
         System.out.println("food toString: " + f.toString());
 
         System.out.println("product ID of p: " + p.productId);
